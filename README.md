@@ -1,0 +1,2 @@
+# Sensibilidadades.ff
+Sensi.perfet
