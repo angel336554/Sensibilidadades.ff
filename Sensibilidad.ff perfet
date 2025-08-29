@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Sensibilidad Free Fire 🔥</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff0000, #000000);
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    select, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      background: #ff3333;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #cc0000;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔥 Generador de Sensibilidad Oficial 🔥</h1>
+  <p>Selecciona tu dispositivo y genera tu sensibilidad para dar todo rojo 🎯</p>
+  
+  <label for="dispositivo">📱 Elige tu dispositivo:</label>
+  <select id="dispositivo">
+    <option value="Infinix">Infinix</option>
+    <option value="Samsung">Samsung</option>
+    <option value="Xiaomi">Xiaomi</option>
+    <option value="Motorola">Motorola</option>
+    <option value="Huawei">Huawei</option>
+    <option value="iPhone">iPhone</option>
+    <option value="Otros">Otros</option>
+  </select>
+  <br>
+
+  <button onclick="generar()">🎮 Generar Sensibilidad</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function generar() {
+      let dispositivo = document.getElementById("dispositivo").value;
+      let sensibilidad = Math.floor(Math.random() * (200 - 100 + 1)) + 100;
+      
+      document.getElementById("resultado").innerHTML = 
+        "📱 Dispositivo: <b>" + dispositivo + "</b><br>" +
+        "🎯 Sensibilidad Perfecta: <b>" + sensibilidad + "</b>";
+    }
+  </script>
+</body>
+</html>
